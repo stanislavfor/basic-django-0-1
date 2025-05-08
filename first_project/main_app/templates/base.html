@@ -1,0 +1,29 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="container">
+    {% block header %}
+    <!-- Общие элементы заголовка -->
+    <header>
+        <h1>Мой первый Django-сайт</h1>
+    </header>
+    {% endblock %}
+
+    {% block content %}
+    <!-- Здесь будет основной контент страницы -->
+    {% endblock %}
+
+    {% block footer %}
+    <!-- Общие элементы подвала -->
+    <footer>
+        <p>&copy; {{ current_year }} Мой первый Django-сайт, 2025</p>
+    </footer>
+    {% endblock %}
+</div>
+</body>
+</html>
